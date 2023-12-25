@@ -32,7 +32,7 @@ const Header = () => {
    
  
   const { cartItems } = useSelector(state => state.cart)
- console.log(cartItems)
+ 
   if(pathname === '/shipping' || pathname === '/payment' || pathname === '/login' || pathname === '/register') return null
    const logoutHandler =async ()=> {
     try {
