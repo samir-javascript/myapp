@@ -45,7 +45,7 @@ const ProductDetailsPage = () => {
   const addToCartHandler =async ()=> {
    
    dispatch(addToCart({ ...product, qty }));
-   console.log(qty)
+   
    navigate('/cart');
   }
   const AddToWishlistHandler = async()=> {

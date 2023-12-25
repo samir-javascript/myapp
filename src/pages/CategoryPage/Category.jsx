@@ -12,7 +12,7 @@ const Category = () => {
    const { category } = useParams()
    const categoryBanner = useCategoryNames().find(item => item.name === category)
    const { data:products, isLoading} = useGetProductsCategoryQuery(category);
-   console.log(products)
+   
    if(isLoading) return <Loading />
   
   return (
